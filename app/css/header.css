@@ -1,0 +1,56 @@
+/*头部通栏*/
+.topbar{
+	height: 45px;
+	width: 100%;
+	background: url("../../img/header-bg.png") repeat-x;
+	background-size: 1px 44px;
+	border-bottom: 1px solid #e0e0e0;
+	z-index: 1001;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.topbar .icon_back{
+	background-position: -20px 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin:12px 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.topbar form{
+	
+	height: 44px;
+	padding: 0 40px;
+	text-align: center;
+}
+
+.topbar form h3{
+	line-height: 44px;
+	margin:0;
+}
+
+.topbar form input{
+	width: 100%;
+	height: 32px;
+	border:1px solid #bfbfbf;
+	border-radius:4px;
+	margin-top: 6px;
+}
+
+.topbar .icon_menu{
+	background-position: -60px 0;
+	width: 20px;
+	height: 22px;
+	display: block;
+	padding:12px 10px;
+	background-clip: content-box;/**背景被裁剪到边框盒**/
+	background-origin: content-box;/**背景图像相对于内边距框来定位**/
+	position: absolute;
+	top:0;
+	right:0;
+}

@@ -1,0 +1,67 @@
+::before,::affe{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;/*去除默认高亮*/
+	-webkit-box-sizing:border-box;/*以你的border开始计算宽度*/
+}
+body{
+	padding: 0px;
+	margin:0px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei",sans-serif;/*第二个是手机的一个默认的字体*/
+	color:#000;
+	-webkit-box-sizing:border-box;/*以你的border开始计算宽度*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+	-webkit-box-sizing:border-box;/*以你的border开始计算宽度*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+span,a,input{
+	-webkit-box-sizing:border-box;/*以你的border开始计算宽度*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.layout{
+	min-width: 300px;
+	max-width: 640px;
+	margin:0 auto;
+	position: relative;
+	height: 1000px;
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+	margin:0px;
+}
+
+input,textarea{
+	border: none;
+	resize: none;
+	outline: none;/*清除默认选中框*/
+	-webkit-appearance:none;/*清除浏览器默认的样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+[class^="icon_"],[class*=" icon_"]{
+	background: url("../../img/sprites.png") no-repeat;
+	background-size: 200px 200px;
+}

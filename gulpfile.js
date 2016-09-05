@@ -22,7 +22,7 @@ var cssnano = require('gulp-cssnano');
 // 压缩css
 gulp.task('minifycss', function() {
     return gulp.src('app/css/*.css')      //压缩的文件
-        .pipe(cssnano())                 //执行压缩
+        .pipe(cssnano({zindex: false}))                 //执行压缩
         .pipe(gulp.dest('dist/css/'));   //输出文件夹   
 });
 
